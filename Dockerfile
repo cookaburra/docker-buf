@@ -4,7 +4,7 @@ WORKDIR /workdir
 COPY package.json package-lock.json ./
 COPY --from=golang:1.19-alpine /usr/local/go/ /usr/local/go/
 COPY --from=bufbuild/buf:latest /usr/local/bin/buf /usr/local/bin/buf
-ENV PATH="/usr/local/go/bin:${PATH}"
+ENV PATH="/usr/local/go/bin:/root/go/bin:${PATH}"
 
 RUN apk add --update --no-cache \
     ca-certificates \

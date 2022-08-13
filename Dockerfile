@@ -9,4 +9,4 @@ RUN go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
 RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 RUN go install github.com/bufbuild/connect-go/cmd/protoc-gen-connect-go@latest
 
-RUN npm install -g @bufbuild/protobuf @bufbuild/connect-web @bufbuild/protoc-gen-es @bufbuild/protog-gen-connect-web
+RUN npm install -g @bufbuild/protobuf @bufbuild/connect-web @bufbuild/protoc-gen-es @bufbuild/protoc-gen-connect-web

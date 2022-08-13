@@ -7,6 +7,7 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 RUN apk add --update --no-cache \
     ca-certificates \
     git \
+    qemu-x86_64 \
     openssh-client && \
   rm -rf /var/cache/apk/*
 RUN apk add --update nodejs npm
